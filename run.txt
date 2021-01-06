@@ -1,0 +1,1 @@
+g++ main.cpp Object/Member.cpp ObjectData/MemberData.cpp ui/ui.cpp -o main.exe
