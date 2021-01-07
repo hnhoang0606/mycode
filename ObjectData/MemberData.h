@@ -21,8 +21,7 @@ class MemberData
         int PushBack(Member member);
         int Export(string filename);
         void Set(Member member, int i);
-        void Delete(int i);
-
+        int Delete(int i);
 
 };
 

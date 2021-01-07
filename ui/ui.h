@@ -3,7 +3,9 @@
 #include<iostream>
 #include <string >
 #include "../Object/Member.h"
+#include "../Object/book.h"
 #include "../ObjectData/MemberData.h"
+#include "../ObjectData/BookData.h"
 using namespace std;
 
 class ui
@@ -14,9 +16,14 @@ class ui
         void CreateMember();
         void DeleteMember();
         void MainInterFace();
-        void Delete();
-};
 
+        void ReadBookTalble();
+        void CreateBook();
+        void EditBook();
+        void DeleteBook();
+        
+};
     Member EnterMemberInfor();
+    Book EnterBookInfor();
 
 #endif

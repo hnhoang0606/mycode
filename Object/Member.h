@@ -10,7 +10,7 @@ class Member
     int Id;
     int MemberID;
     string MemberName;
-    static int IncreID;
+    // static int IncreID;
     public :
         Member();
         Member(int id, int memberID, string memberName);
@@ -21,7 +21,7 @@ class Member
         void SetMemberID(int memberID);
         void SetMemberName(string memberName);
         string ToString();
-        void InCreateID();
+        // void InCreateID();
         //friend Member EnterMemberInfor();
 };
 #endif

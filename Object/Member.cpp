@@ -50,8 +50,8 @@ string Member ::ToString()
     return s;
 }
 
-int Member :: IncreID = 0;
-void Member :: InCreateID()
-{
-    Id = ++IncreID;
-}
+// int Member :: IncreID = 0;
+// // void Member :: InCreateID()
+// {
+//     Id = ++IncreID;
+// }

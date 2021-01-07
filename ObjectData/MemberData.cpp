@@ -10,7 +10,7 @@ MemberData :: MemberData(string filename)
     _data.resize(0);
     MaxId = 0;
     ifstream FileIn (filename);
-    int Number;
+    int Number = 0;
     FileIn >> Number;
 
     int Id;
@@ -45,7 +45,9 @@ Member MemberData ::Get(int i)
 }
 
 int MemberData ::PushBack(Member member)
-{
+{   
+    MaxId ++;
+    member.SetId(MaxId);
     _data.push_back(member);
     return MaxId;
 }
@@ -69,14 +71,9 @@ void MemberData :: Set(Member member, int i)
 }
 
 
-void MemberData::Delete(int i) {
-    _data.erase(_data.begin() + i - 1);
-    MaxId = _data.size();
-    for (int j = i-1; j < MaxId; j++)
-    {   
-        int k = j+1;
-        _data[j].SetId(k);
-    }
-    _data.back().SetId(MaxId);
+int MemberData::Delete(int id)
+{
+    _data.erase(_data.begin() + id);
     
+    return 0;
 }
